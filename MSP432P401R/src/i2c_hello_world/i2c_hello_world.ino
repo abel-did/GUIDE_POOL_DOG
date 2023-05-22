@@ -1,14 +1,20 @@
+// Guide Pool Dog
+// Date : 22 / 05 / 2023
 
 #include <Wire.h>
 #include <stdio.h>
 #include <PixyI2C.h>
 
-PixyI2C pixy(0x55); // You can set the I2C address through PixyI2C object 
+PixyI2C pixy(0x55); // I2C Address
+
+#define LED RED_LED
 
 void setup()
 {
   Serial.begin(9600);
   Serial.print("Starting...\n");
+
+  pinMode(LED, OUTPUT);
   
   pixy.init();
 }
@@ -21,24 +27,21 @@ void loop()
   uint16_t blocks;
   char buf[32]; 
   
-  blocks = pixy.getBlocks();
+  blocks = pixy.getBlocks(1); // Just take the first block
   
   if (blocks)
   {
     i++;
     
-    // do this (print) every 50 frames because printing every
-    // frame would bog down the Arduino
-    if (i%50==0)
+    if (i%50==0) // Every 50 Frames
     {
-      sprintf(buf, "Detected %d:\n", blocks);
-      Serial.print(buf);
-      for (j=0; j<blocks; j++)
+      if(pixy.blocks[j].x < 130)
       {
-        sprintf(buf, "  block %d: ", j);
-        Serial.print(buf); 
-        pixy.blocks[j].print();
+          digitalWrite(LED, HIGH);
+          delay(1000);
       }
+      
     }
+    digitalWrite(LED,LOW);
   }  
 }
