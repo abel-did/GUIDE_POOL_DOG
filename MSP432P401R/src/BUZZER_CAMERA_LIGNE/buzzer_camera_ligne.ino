@@ -28,12 +28,12 @@ void loop()
 { 
   static int i = 0;
   int j;
-  uint16_t blocks;
+  uint16_t blocks_camera_ligne;
   char buf[32]; 
   
-  blocks = pixy.getBlocks(1); // Just take the first block
+  blocks_camera_ligne = pixy.getBlocks(1); // Just take the first block
   
-  if (blocks)
+  if (blocks_camera_ligne)
   {
     i++;
     
