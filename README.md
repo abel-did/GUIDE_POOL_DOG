@@ -1,6 +1,5 @@
 # Guide Pool Dog
 
-**Align center:**
 <p align="center" width="100%">
     <img width="33%" src="media/logo.PNG"> 
 </p>
