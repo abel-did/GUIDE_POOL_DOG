@@ -12,6 +12,18 @@ Le système de guidage sonore utilise des tonalités et des combinaisons de sons
 
 La planche a été conçue de façon à garder un aspect ergonomique, afin qu’elle puisse correspondre et s’adapter à différents types de corps et compétences des utilisateurs. Sa conception est résistance à l’eau et étanche, ce qui garantit son utilisation sûre et fiable dans un environnement aquatique. 
 
+### Composants électroniques
+
+- MSP432
+- Caméra Pixy
+- Buzzer
+
+
+<p align="center" width="100%">
+    <img width="32%" src="media/carte_msp432.jpg"> 
+    <img width="32%" src="media/pixy_cam.jpg"> 
+    <img width="32%" src="media/buzzer.jpg"> 
+</p>
 
 
 
