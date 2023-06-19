@@ -27,5 +27,5 @@ La planche a été conçue de façon à garder un aspect ergonomique, afin qu’
 
 ### Site internet
 
-(link)[https://guidepooldog.nicepage.io/]
+https://guidepooldog.nicepage.io/
 
