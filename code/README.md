@@ -1,5 +1,5 @@
 # Code source
-Nous avons écrit plusieurs code permettant d'utiliser
+Nous avons écrit plusieurs code en C++ permettant d'utiliser
 une caméra, deux caméras et d'initialiser le protocole I2C. 
 
 -   Buzzer Caméra Ligne 
