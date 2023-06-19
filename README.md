@@ -1,5 +1,7 @@
 # Guide Pool Dog
 
+![alt text](media/logo.PNG)
+
 ### Description générale
 
 Notre planche de natation adaptée nommée Guide Pool Dog, est un dispositif conçu spécialement pour les personnes non voyantes ou malvoyantes, leur permettant de pratiquer la natation de manière autonome et sécurisée dans une piscine conventionnelle. Elle est équipée de caméras qui détectent les repères du couloir de nage, tels que la ligne au fond du bassin et les bouées délimitant les bords du couloir. Les informations captées sont alors traitées par un système informatique intégrée à la planche et transmises aux utilisateurs sous la forme de signaux sonores. 
