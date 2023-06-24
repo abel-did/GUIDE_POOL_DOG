@@ -16,5 +16,5 @@ Troisième code source permettant d'utiliser deux caméra et un buzzer.
 
 -   FINAL_PRG
 
-Programme final qui utilise les deux caméras Pixy et le buzzer. Ce code 
+Dernier code source qui utilise les deux caméras Pixy et le buzzer. Ce code 
 a été utilisé durant le jour des projets.
