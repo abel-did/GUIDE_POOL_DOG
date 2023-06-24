@@ -15,7 +15,7 @@ int FREQDurations_bouee[] = {1};
 int FREQDurations [] = {5,1};
 
 PixyI2C pixy_ligne(0x55);
-PixyI2C pixy_bouee(0x56); // I2C Address
+PixyI2C pixy_bouee(0x56); // I2C Adresse
 
 void setup()
 {
@@ -39,7 +39,7 @@ void loop()
   if (blocks_camera_ligne)
   {
     i++; 
-    if (i%20==0) // Every 50 Frames
+    if (i%20==0) // Toutes les 20 images
     {
       if(pixy_ligne.blocks[j].height > 100)
       {
@@ -54,7 +54,7 @@ void loop()
   if (blocks_camera_bouee)
   {
     i++; 
-    if (i%10==0) // Every 50 Frames
+    if (i%10==0) // Toutes les 10 images
     {
       if(pixy_bouee.blocks[j].x > 0)
       {
