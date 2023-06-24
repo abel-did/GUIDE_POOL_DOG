@@ -10,7 +10,7 @@ int buzzerPin = 19;
 int arrayFREQ[] = {FREQ};
 int FREQDurations[] = {2};
 
-PixyI2C pixy(0x55); // I2C Address
+PixyI2C pixy(0x55); // I2C Adresse
 
 #define LED RED_LED
 
@@ -31,13 +31,13 @@ void loop()
   uint16_t blocks_camera_ligne;
   char buf[32]; 
   
-  blocks_camera_ligne = pixy.getBlocks(1); // Just take the first block
+  blocks_camera_ligne = pixy.getBlocks(1); // Prends le bloc le plus gros
   
   if (blocks_camera_ligne)
   {
     i++;
     
-    if (i%50==0) // Every 50 Frames
+    if (i%50==0) // Toutes les 50 images
     {
       if(pixy.blocks[j].x > 45)
       {

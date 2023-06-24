@@ -5,7 +5,7 @@
 #include <stdio.h>
 #include <PixyI2C.h>
 
-PixyI2C pixy(0x55); // I2C Address
+PixyI2C pixy(0x55); // I2C Adresse
 
 #define LED RED_LED
 
